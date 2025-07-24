@@ -1,2 +1,14 @@
-- name: Chocolatey Action
-  uses: crazy-max/ghaction-chocolatey@v3.4.0
+on: push
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      -
+        name: Choco help
+        uses: crazy-max/ghaction-chocolatey@v3
+        with:
+          args: -h
