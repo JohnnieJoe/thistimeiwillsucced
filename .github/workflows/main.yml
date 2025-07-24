@@ -1,0 +1,2 @@
+- name: Chocolatey Action
+  uses: crazy-max/ghaction-chocolatey@v3.4.0
