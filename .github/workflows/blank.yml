@@ -1,2 +1,2 @@
-- name: Install powershell
+apk install powershell
   uses: cakhanif/action-install-powershell@v1
